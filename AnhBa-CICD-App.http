@@ -1,0 +1,6 @@
+@AnhBa_CICD_App_HostAddress = http://localhost:5255
+
+GET {{AnhBa_CICD_App_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
