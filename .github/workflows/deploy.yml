@@ -24,3 +24,6 @@ jobs:
 
       - name: Push Docker image
         run: docker push phatdang1404/anhba-cicd-app:latest
+
+      - name: Deploy to Render
+        run: curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
